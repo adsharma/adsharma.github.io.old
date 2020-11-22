@@ -1,6 +1,6 @@
 ## FlatBuffer as serialization agnostic IDL
 
-Many popular IDLs mix two separate concerns into one leading to less than optimal results.
+Many popular IDLs mix the following two separate concerns into one leading to less than optimal results.
 
 * Language agnostic type system supporting enums, types and variants/unions.
 * RPC oriented wire format with backward compatibility as a first class concern
@@ -39,7 +39,7 @@ class Cat:
 ## Example IDL
 
 This work separates these two concerns as described above. It adopts the flatbuffer IDL (since it doesn't have the
-field numbering concern in the IDL, significantly simplyfying the language). Annotations have been used to support 
+field numbering concern in the IDL, significantly simplyfying the language). Attributes have been used to support 
 high level type safe concepts such as Protocols and Views (a concept similar to graphql fragments).
 
 Here is a flatbuffer derived IDL file.
@@ -51,6 +51,10 @@ Running it through the generator results in the following Rust code:
 https://github.com/adsharma/flattools/blob/705998739bc69783ffa637b5f37d305d0d671b90/tests/expected/golden-color.rs#L1-L47
 
 Similar output exists for Kotlin, Swift and Python3 + dataclasses in the same directory.
+
+### Backward Compatibility
+
+Using the `deprecated` attribute is recommended.
 
 ### Future Improvements
 
