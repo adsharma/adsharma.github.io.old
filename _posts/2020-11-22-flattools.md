@@ -1,3 +1,10 @@
+---
+comments:
+  host: fosstodon.org
+  username: seeker
+  id: 105466469337694011
+---
+
 ## FlatBuffer as serialization agnostic IDL
 
 Many popular IDLs mix the following two separate concerns into one leading to less than optimal results.
