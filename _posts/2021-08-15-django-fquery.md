@@ -32,6 +32,7 @@ But instead with fquery, you'd write the same model as:
 from datetime import datetime
 from fquery.django import model
 from dataclasses import dataclass
+from fquery.query import query
 from fquery.view_model import edge, node
 
 
