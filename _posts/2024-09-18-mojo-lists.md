@@ -5,14 +5,14 @@ Mojo seeks to provide a familar programming model to python programmers, while a
 ### Iterating over lists
 
 Python
-```python3
+```
 a: List[int] = [1, 2, 3, 4]
 for e in a:
     print(a)
 ```
 
 Mojo
-```mojo
+```
 var a: List[Int] = List(1, 2, 3, 4)
 for e in a:
     print(e)
