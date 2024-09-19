@@ -12,7 +12,7 @@ author: Arun Sharma
 description: Random Musings
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/reverie.png
+avatar: http://github.com/adsharma.png
 
 #
 # Flags below are optional
@@ -84,6 +84,9 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-remote-theme
+
+remote_theme: knhash/jekyllBear
 
 include: ['_pages']
 
