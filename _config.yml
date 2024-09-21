@@ -28,6 +28,11 @@ description: >- # used by seo meta and the atom feed
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://adsharma.github.io"
 
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: cotes2020/jekyll-theme-chirpy
+
 github:
   username: adsharma # change to your GitHub username
 
