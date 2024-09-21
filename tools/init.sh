@@ -103,7 +103,7 @@ commit() {
 
 main() {
   check_env
-  reset_latest
+  #reset_latest
   init_files
   commit
 }
