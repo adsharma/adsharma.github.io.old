@@ -282,6 +282,7 @@ p > img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
+  max-width: 10%;
 
   @include mobile {
     float: none;
